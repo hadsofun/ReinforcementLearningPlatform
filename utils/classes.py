@@ -238,13 +238,13 @@ class ReplayBuffer:
         states = self.s_mem[batch]
         actions = self.a_mem[batch]
         rewards = self.r_mem[batch]
-        actions_ = self._s_mem[batch]
+        states_ = self._s_mem[batch]
         terminals = self.end_mem[batch]
         if has_log_prob:
             log_probs = self.log_prob_mem[batch]
-            return states, actions, rewards, actions_, terminals, log_probs
+            return states, actions, rewards, states_, terminals, log_probs
         else:
-            return states, actions, rewards, actions_, terminals
+            return states, actions, rewards, states_, terminals
 
 
 class RolloutBuffer:
