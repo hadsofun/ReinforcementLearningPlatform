@@ -314,9 +314,9 @@ class UAV:
 
 	def h(self) -> np.ndarray:
 		"""
-        :brief:  [        0             1/Jxx    0       0 ]
-                 [        0               0    1/Jyy     0 ]
-                 [        0               0      0    1/Jzz]
+        :brief:  [ 1/Jxx    0       0 ]
+                 [ 0      1/Jyy     0 ]
+                 [ 0        0    1/Jzz]
         :return: h(rho_1)
         """
 		_g = np.zeros((3, 3)).astype(float)
