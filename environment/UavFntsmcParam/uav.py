@@ -61,7 +61,7 @@ class UAV:
 		self.phi, self.theta, self.psi = param.angle0
 		self.p, self.q, self.r = param.pqr0
 
-		self.init_state = np.concatenate((param.pos0, param.vel0, param.angle0, param.pos0))
+		self.init_state = np.concatenate((param.pos0, param.vel0, param.angle0, param.pqr0))
 
 		self.dt = param.dt
 		self.n = 0  # 记录走过的拍数
