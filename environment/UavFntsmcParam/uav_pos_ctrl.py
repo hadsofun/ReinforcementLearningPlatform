@@ -320,7 +320,7 @@ class uav_pos_ctrl(UAV):
         @param dot_ref:		dot_phi_d dot_theta_d dot_psi_d
         @param dot2_ref:
         @param att_only:	为 True 时，dot2_ref 正常输入
-                            为 True 时，dot2_ref 为 0
+                            为 False 时，dot2_ref 为 0
         @return:			Tx Ty Tz
         """
         self.att_ref_old = self.att_ref.copy()
