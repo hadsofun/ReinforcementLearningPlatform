@@ -1,4 +1,4 @@
-This folder is the definition of the Rl environment. This document is the detailed description of each file.
+This folder is the definition of the RL environment. This document is the detailed description of each file.
 
 ### collector
 The class for data collection.
