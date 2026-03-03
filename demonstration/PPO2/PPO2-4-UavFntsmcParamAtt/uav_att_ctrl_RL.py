@@ -77,7 +77,7 @@ class uav_att_ctrl_RL(rl_base, uav_att_ctrl):
 		_e_att = self.uav_att() - self.ref
 		_e_pqr = self.uav_dot_att() - self.dot_ref
 
-		'''reward for position error'''
+		'''reward for angle error'''
 		u_att = -np.dot(_e_att ** 2, self.Q_att)
 
 		'''reward for velocity error'''
@@ -101,7 +101,7 @@ class uav_att_ctrl_RL(rl_base, uav_att_ctrl):
 			if self.theta > self.theta_max or self.theta < self.theta_min:
 				_u_theta = -np.pi ** 2 * self.Q_att[1]
 			if self.psi > self.psi_max or self.psi < self.psi_min:
-				_u_theta = -4 * np.pi ** 2 * self.Q_att[2]
+				_u_psi = -4 * np.pi ** 2 * self.Q_att[2]
 
 			u_extra = _n * (_u_phi + _u_theta + _u_psi + u_pqr + u_acc)
 
