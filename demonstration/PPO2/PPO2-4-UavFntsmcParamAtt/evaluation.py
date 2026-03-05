@@ -91,7 +91,7 @@ if __name__ == '__main__':
 	n = 1
 	for i in range(n):
 		reset_att_ctrl_param('zero')
-		yyf = [deg2rad(80) * np.ones(3), 5 * np.ones(3), np.array([0, -np.pi / 2, np.pi / 2])]
+		# yyf = [deg2rad(80) * np.ones(3), 5 * np.ones(3), np.array([0, -np.pi / 2, np.pi / 2])]
 		env.reset_uav_att_ctrl_RL_tracking(random_trajectory=True,
 										   yaw_fixed=False,
 										   new_att_ctrl_param=att_ctrl_param,
