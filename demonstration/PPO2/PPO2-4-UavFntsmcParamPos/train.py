@@ -23,7 +23,7 @@ from utils.functions import *
 from utils.classes import Normalization
 
 timestep = 0
-ENV = 'uav_fntsmc_param_att'
+ENV = 'uav_fntsmc_param_pos'
 ALGORITHM = 'PPO'
 
 '''Parameter list of the quadrotor'''
