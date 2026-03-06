@@ -184,7 +184,7 @@ class uav_pos_ctrl_RL(rl_base, uav_pos_ctrl):
                                        random_pos0: bool = False,
                                        yaw_fixed: bool = False,
                                        new_att_ctrl_param: fntsmc_param = None,
-                                       new_pos_ctrl_parma: fntsmc_param = None,
+                                       new_pos_ctrl_param: fntsmc_param = None,
                                        outer_param: list = None):
         """
         @param outer_param:
