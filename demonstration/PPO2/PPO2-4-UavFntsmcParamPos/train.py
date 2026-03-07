@@ -277,10 +277,10 @@ if __name__ == '__main__':
 				print('Sumr:  ', sumr)
 				sumr_list.append(sumr)
 				sumr = 0.
-				yyf_A = 1.5 * np.random.choice([-1, 1], 4)
-				yyf_T = 5 * np.ones(4)
-				yyf_phi0 = np.pi / 2 * np.random.choice([-1, 0, 1], 4)
-				yyf = [yyf_A, yyf_T, yyf_phi0]
+				# yyf_A = 1.5 * np.random.choice([-1, 1], 4)
+				# yyf_T = 5 * np.ones(4)
+				# yyf_phi0 = np.pi / 2 * np.random.choice([-1, 0, 1], 4)
+				# yyf = [yyf_A, yyf_T, yyf_phi0]
 				env.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True,
 												   random_pos0=False,
 												   new_att_ctrl_param=None,
@@ -328,10 +328,10 @@ if __name__ == '__main__':
 			print('   Testing...')
 			for i in range(n):
 				reset_pos_ctrl_param('zero')
-				_yyf_A = 1.5 * np.random.choice([-1, 1], 4)
-				_yyf_T = 5 * np.ones(4)
-				_yyf_phi0 = np.pi / 2 * np.random.choice([-1, 0, 1], 4)
-				_yyf = [_yyf_A, _yyf_T, _yyf_phi0]
+				# _yyf_A = 1.5 * np.random.choice([-1, 1], 4)
+				# _yyf_T = 5 * np.ones(4)
+				# _yyf_phi0 = np.pi / 2 * np.random.choice([-1, 0, 1], 4)
+				# _yyf = [_yyf_A, _yyf_T, _yyf_phi0]
 				env_test.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True,
 														random_pos0=False,
 														new_att_ctrl_param=None,
