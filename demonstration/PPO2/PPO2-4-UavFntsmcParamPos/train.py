@@ -210,12 +210,12 @@ if __name__ == '__main__':
 
 	env = uav_pos_ctrl_RL(uav_param, att_ctrl_param, pos_ctrl_param)
 	reset_pos_ctrl_param('zero')
-	env.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True, random_pos0=False, new_att_ctrl_param=None, new_pos_ctrl_parma=pos_ctrl_param)
+	env.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True, random_pos0=False, new_att_ctrl_param=None, new_pos_ctrl_param=pos_ctrl_param)
 	env.show_image(True)
 
 	env_test = uav_pos_ctrl_RL(uav_param, att_ctrl_param, pos_ctrl_param)
 	reset_pos_ctrl_param('zero')
-	env_test.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True, random_pos0=False, new_att_ctrl_param=None, new_pos_ctrl_parma=pos_ctrl_param)
+	env_test.reset_uav_pos_ctrl_RL_tracking(random_trajectroy=True, random_pos0=False, new_att_ctrl_param=None, new_pos_ctrl_param=pos_ctrl_param)
 
 	reward_norm = Normalization(shape=1)
 
