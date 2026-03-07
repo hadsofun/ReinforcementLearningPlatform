@@ -365,7 +365,7 @@ if __name__ == '__main__':
 		'''6. 每学习 50 次，保存一下 policy'''
 		if t_epoch % 50 == 0 and t_epoch > 0:
 			# 	average_test_r = agent.agent_evaluate(5)
-			test_num += 1
+			# test_num += 1
 			print('...check point save...')
 			temp = simulationPath + 'trainNum_{}/'.format(t_epoch)
 			os.mkdir(temp)
