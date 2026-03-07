@@ -318,7 +318,7 @@ if __name__ == '__main__':
 		print('Train Epoch: {}'.format(t_epoch))
 		# timestep += NUM_OF_TRAJ * env.time_max / env.dt
 		timestep += ppo_msg['buffer_size']
-		agent.learn(timestep, buf_num=1)  # 使用 RolloutBuffer2
+		agent.learn(timestep, buf_num=2)  # 使用 RolloutBuffer2
 		agent.cnt += 1
 
 		'''4. 每学习 10 次，测试一下'''
